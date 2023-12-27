@@ -15,7 +15,7 @@ class PopularApi {
     );
     dio = Dio(options);
   }
-  Future<List<Results>> getAllPopular() async {
+  Future<List<PopularModel>> getAllPopular() async {
     try {
       Response response = await dio.get(
         'person/popular',
